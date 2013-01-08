@@ -1,0 +1,15 @@
+<h1><%= title %></h1>
+
+<div id="productsList">
+    <% items.forEach(function(item) { %>
+        <div class="product rounded-corners">
+            <h2>Product: <%= item.name %></h2>
+            <p><b>Description:</b> <%= item.description %></p>
+            <p><b>ID:</b> <%= item._id %></p>
+            <ul class="itemMenu clearfix">
+                <li>Delete</li>
+                <li>Update</li>
+            </ul>
+        </div>
+    <% }); %>
+</div>
